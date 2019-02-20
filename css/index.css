@@ -1,1 +1,282 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.menu a {
+  padding: 10px;
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 10px 10px 0 0;
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+}
+.top-box {
+  border-radius: 10px 10px 0 0;
+  background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/low light.jpg");
+  background-attachment: fixed;
+  background-size: 150%;
+  height: auto;
+  width: 100%;
+  padding: 30px;
+}
+.top-box .me {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  border: 5px solid black;
+  width: 40%;
+  height: auto;
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.top-box .text-bit h1 {
+  font-size: 3em;
+  color: white;
+}
+.top-box .text-bit .quote {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-bottom: 2px dotted white;
+}
+.top-box .text-bit p {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.top-box .text-bit button {
+  border-radius: 10px;
+  border: 2px solid white;
+  color: black;
+  width: 20%;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.top-box .text-bit button:hover {
+  background-color: red;
+  color: white;
+}
+.middle-content {
+  border: 3px solid black;
+  display: inline-flex;
+  max-width: 1000px;
+}
+@media (max-width: 1000px) {
+  .middle-content {
+    display: flex;
+  }
+}
+.middle-content .information {
+  border-right: 1px dashed black;
+  padding: 20px;
+  width: 500px;
+}
+.middle-content .information h1 {
+  font-size: 2em;
+}
+.middle-content .information p {
+  margin: 10px;
+  padding: 10px;
+}
+.middle-content .talent {
+  border-left: 1px dashed black;
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.middle-content .talent h1 {
+  font-size: 2em;
+  margin: 0 auto;
+}
+.middle-content .talent ul {
+  margin: 0 auto;
+}
+.middle-content .talent ul li {
+  border: 2px dashed black;
+  padding: 10px;
+  line-height: 10px;
+}
+.work-history {
+  border-radius: 0 0 10px 10px;
+  border: 2px solid black;
+  background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/bricks-brickwall-brickwork-1092364.jpg");
+  background-attachment: scroll;
+}
+.work-history h1 {
+  font-size: 2em;
+  margin: 10px;
+  padding: 10px;
+}
+.work-history ul ol {
+  margin: 10px;
+  padding: 10px;
+}
+.work-history ul li {
+  margin: 10px;
+  padding: 10px;
+}
+.work-history .button {
+  border-radius: 10px;
+  border: 2px solid white;
+  color: black;
+  width: 20%;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.work-history button:hover {
+  background-color: red;
+  color: white;
+}
