@@ -1,1 +1,383 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/marble.jpg");
+  background-size: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+@media (max-width: 330px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menu a {
+  background-color: #000000;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 5px #181717;
+}
+@media (max-width: 330px) {
+  .menu a {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+  }
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+}
+.top-box {
+  border-radius: 10px 10px 0 0;
+  background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/low light.jpg");
+  background-attachment: fixed;
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  background-size: 220%;
+  border: 5px solid black;
+  height: 1000px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 10px 10px 5px #181717;
+}
+@media (max-width: 330px) {
+  .top-box {
+    height: 500px;
+  }
+}
+.top-box .me {
+  background-image: -moz-linear-gradient(to right, #ffffff, #000000);
+  background-image: -webkit-linear-gradient(to right, #ffffff, #000000);
+  background-image: -ms-linear-gradient(to right, #ffffff, #000000);
+  background-image: linear-gradient(to right, #ffffff, #000000);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  border: 5px solid black;
+  width: 30%;
+  height: auto;
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+@media (max-width: 715px) {
+  .top-box .me {
+    margin: 0 auto;
+    width: 75%;
+  }
+}
+@media (max-width: 330px) {
+  .top-box .text-bit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.top-box .text-bit h1 {
+  padding-top: 60px;
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media (max-width: 330px) {
+  .top-box .text-bit h1 {
+    margin-left: 10px;
+  }
+}
+.top-box .text-bit .quote {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-bottom: 2px dotted #ffffff;
+  background-color: #000000;
+}
+.top-box .text-bit p {
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+}
+.top-box .text-bit button {
+  border-radius: 10px;
+  border: 2px solid white;
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.top-box .text-bit button:hover {
+  background-color: #4b4b4b;
+  color: white;
+}
+.middle-content {
+  border: 5px solid black;
+  display: inline-flex;
+  max-width: 1000px;
+  color: white;
+  box-shadow: 10px 10px 5px #181717;
+  background-color: #444343;
+}
+@media (max-width: 1000px) {
+  .middle-content {
+    display: flex;
+  }
+}
+.middle-content .information {
+  border-right: 1px dashed white;
+  padding: 20px;
+  width: 500px;
+}
+@media (max-width: 330px) {
+  .middle-content .information {
+    padding: 0;
+  }
+}
+.middle-content .information h1 {
+  font-size: 2em;
+}
+@media (max-width: 330px) {
+  .middle-content .information h1 {
+    font-size: 1em;
+  }
+}
+.middle-content .information p {
+  line-height: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+@media (max-width: 330px) {
+  .middle-content .information p {
+    font-size: 1em;
+  }
+}
+.middle-content .talent {
+  border-left: 1px dashed white;
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.middle-content .talent h1 {
+  font-size: 2em;
+  margin: 0 auto;
+}
+.middle-content .talent ul {
+  padding: 20px;
+  margin: 0 auto;
+}
+.middle-content .talent ul li {
+  border: 2px dashed white;
+  padding: 10px;
+  line-height: 10px;
+}
+.work-history {
+  border-radius: 0 0 50px 50px;
+  border: 5px solid black;
+  background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/bricks-brickwall-brickwork-1092364.jpg");
+  background-size: 1000px;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px #181717;
+}
+.work-history h1 {
+  font-size: 2em;
+  margin: 10px;
+  padding: 10px;
+}
+.work-history ul ol {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5em;
+}
+.work-history ul li {
+  margin: 10px;
+  padding: 10px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+.work-history .button {
+  border-radius: 75px;
+  border: 5px solid black;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.work-history button:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 330px) {
+  footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer .menu a {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #181717;
+}
+@media (max-width: 330px) {
+  footer .menu a {
+    background-color: white;
+    color: black;
+    border-radius: 0;
+  }
+}
+.space {
+  padding-bottom: 20px;
+}

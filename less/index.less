@@ -54,6 +54,283 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+// Mixins
+.givemespace () {
+	margin: 10px;
+	padding: 10px;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/marble.jpg");
+	background-size: 100%;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	@media ( max-width: 330px ) {
+		display: flex;
+		flex-direction: column;
+	}
+	
+
+	a {
+		background-color: rgb(0, 0, 0);
+		padding: 10px;
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		font-size: 20px;
+		border-left: 2px solid black;
+		border-top: 2px solid black;
+		border-right: 2px solid black;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		box-shadow: 10px 10px 5px rgb(24, 23, 23);
+
+		@media ( max-width: 330px ) {
+			background-color: white;
+			color: black;
+			border-radius: 10px;
+		}
+		
+	}
+
+	a:hover{
+		text-decoration: underline;
+		color: white;
+		background-color: black;
+	}
+}
+
+.top-box{
+
+	border-radius: 10px 10px 0 0;
+	background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/low light.jpg");
+	background-attachment: fixed;
+	background-position: 50% 75%;
+	background-repeat: no-repeat;
+	background-size: 220%;
+	border: 5px solid black;
+	height: 1000px;
+	width: 100%;
+	padding: 30px;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
+
+	@media ( max-width: 330px ) {
+		height: 500px;
+	}
+
+
+	.me {
+
+		background-image: -moz-linear-gradient(to right, #ffffff, #000000);
+		background-image: -webkit-linear-gradient(to right, #ffffff, #000000);
+		background-image: -ms-linear-gradient(to right, #ffffff, #000000);
+		background-image: linear-gradient(to right, #ffffff, #000000);
+		border-radius: 10px;
+		background-color:white;
+		padding: 20px;
+		border: 5px solid black;
+    	width: 30%;
+    	height: auto;
+    	display: flex;
+		margin-right: auto;
+		margin-bottom: 20px;
+		
+		@media ( max-width: 715px ) {
+			margin: 0 auto;
+			width: 75%; 
+		}
+	}
+
+	.text-bit{
+
+		@media ( max-width: 330px ) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		h1 {
+			padding-top: 60px;
+			font-size: 3em;
+			color: rgb(255, 255, 255);
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+			@media ( max-width: 330px ) {
+				margin-left: 10px; 
+			}
+		}
+
+		.quote{
+			font-size: 24px;
+			display: flex;
+			justify-content: center;
+			color: white;
+			border-bottom: 2px dotted rgb(255, 255, 255);
+			background-color: rgb(0, 0, 0);
+		}
+
+		p {
+			color: rgb(255, 255, 255);
+			.givemespace();
+		}
+
+		button {
+			border-radius: 10px;
+			border: 2px solid white;
+			color: black;
+			font-size: 20px;
+			.givemespace();
+
+			
+		}
+
+		button:hover {
+			background-color: rgb(75, 75, 75);
+			color: white;
+		}
+	}
+}
+
+.middle-content {
+	border: 5px solid black;
+	display: inline-flex;
+	max-width: 1000px;
+	color: white;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
+	background-color: rgb(68, 67, 67);
+	
+
+	@media (max-width: 1000px ) {
+		display: flex;
+	}
+
+	.information {
+		border-right: 1px dashed white;
+		padding: 20px;
+		width: 500px;
+
+		@media ( max-width: 330px ) {
+			padding: 0;
+		}
+
+		h1 {
+			font-size: 2em;
+
+			@media ( max-width: 330px ) {
+				font-size: 1em;
+			}
+		}
+
+		p {
+			line-height: 30px;
+			.givemespace();
+
+			@media ( max-width: 330px ) {
+				font-size: 1em;
+			}
+		}
+	}
+
+	.talent {
+		border-left: 1px dashed white;
+		padding: 20px;
+		width: 500px;
+		display: flex;
+		flex-direction: column;
+
+		h1 {
+			font-size: 2em;
+			margin: 0 auto;
+		}
+
+		ul {
+			padding: 20px;
+			margin: 0 auto;
+
+			li {
+				border: 2px dashed white;
+				padding: 10px;
+				line-height: 10px;
+			}
+		}
+	}
+}
+
+.work-history {
+	border-radius: 0 0 50px 50px;
+	border: 5px solid black;
+	background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/bricks-brickwall-brickwork-1092364.jpg");
+	background-size: 1000px;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
+
+	h1 {
+		font-size: 2em;
+		.givemespace();
+		
+	}
+
+	ul ol {
+		.givemespace();
+		font-size: 1.5em;
+	}
+
+	ul li {
+		.givemespace();
+		margin-left: 5%;
+		margin-bottom: 20px;
+	}
+
+	.button {
+		border-radius: 75px;
+		border: 5px solid black;
+		background-color: black;
+		color: white;
+		font-size: 20px;
+		.givemespace();
+	}
+
+	button:hover {
+		background-color: white;
+		color: black;
+		
+	}
+}
+
+footer .menu {
+	@media ( max-width: 330px ) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+footer .menu a {
+
+	
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
+
+	@media ( max-width: 330px ) {
+		background-color: white;
+		color: black;
+		border-radius: 0;
+	}
+}
+
+.space {
+	padding-bottom: 20px;
+}
