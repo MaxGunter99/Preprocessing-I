@@ -185,10 +185,15 @@ body {
   background-repeat: no-repeat;
   background-size: 220%;
   border: 5px solid black;
-  height: auto;
+  height: 1000px;
   width: 100%;
   padding: 30px;
   box-shadow: 10px 10px 5px #181717;
+}
+@media (max-width: 330px) {
+  .top-box {
+    height: 500px;
+  }
 }
 .top-box .me {
   background-image: -moz-linear-gradient(to right, #ffffff, #000000);
