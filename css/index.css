@@ -137,16 +137,20 @@ body {
 body {
   max-width: 1000px;
   margin: 0 auto;
+  background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/marble.jpg");
+  background-size: 100%;
 }
 .menu {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
+  padding-top: 20px;
 }
 .menu a {
+  background-color: #000000;
   padding: 10px;
   margin-left: 20px;
-  color: black;
+  color: #ffffff;
   text-decoration: none;
   font-size: 20px;
   border-left: 2px solid black;
@@ -163,35 +167,68 @@ body {
   border-radius: 10px 10px 0 0;
   background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/low light.jpg");
   background-attachment: fixed;
-  background-size: 150%;
-  height: auto;
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  border: 5px solid black;
+  height: 900px;
   width: 100%;
   padding: 30px;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px #181717;
 }
 .top-box .me {
+  background-image: -moz-linear-gradient(to right, #ffffff, #000000);
+  background-image: -webkit-linear-gradient(to right, #ffffff, #000000);
+  background-image: -ms-linear-gradient(to right, #ffffff, #000000);
+  background-image: linear-gradient(to right, #ffffff, #000000);
   border-radius: 10px;
-  padding: 20px;
   background-color: white;
+  padding: 20px;
   border: 5px solid black;
-  width: 40%;
+  width: 30%;
   height: auto;
   display: flex;
   margin-right: auto;
   margin-bottom: 20px;
 }
+@media (max-width: 330px) {
+  .top-box .me {
+    padding: 0;
+  }
+}
+@media (max-width: 715px) {
+  .top-box .me {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 330px) {
+  .top-box .text-bit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .top-box .text-bit h1 {
+  padding-top: 60px;
   font-size: 3em;
-  color: white;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media (max-width: 330px) {
+  .top-box .text-bit h1 {
+    font-size: 30px;
+  }
 }
 .top-box .text-bit .quote {
+  font-size: 24px;
   display: flex;
   justify-content: center;
   color: white;
-  border-bottom: 2px dotted white;
+  border-bottom: 2px dotted #ffffff;
+  background-color: #000000;
 }
 .top-box .text-bit p {
-  color: white;
+  color: #ffffff;
   margin: 10px;
   padding: 10px;
 }
@@ -209,12 +246,12 @@ body {
   color: white;
 }
 .middle-content {
-  border: 3px solid black;
+  border: 5px solid black;
   display: inline-flex;
   max-width: 1000px;
-  background-color: #4b4b4b;
   color: white;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px #181717;
+  background-color: #444343;
 }
 @media (max-width: 1000px) {
   .middle-content {
@@ -256,14 +293,14 @@ body {
 }
 .work-history {
   border-radius: 0 0 10px 10px;
-  border: 2px solid black;
+  border: 5px solid black;
   background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/bricks-brickwall-brickwork-1092364.jpg");
   background-size: 1000px;
   background-position: center;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px #181717;
 }
 .work-history h1 {
   font-size: 2em;
@@ -295,10 +332,23 @@ body {
   background-color: white;
   color: black;
 }
+@media (max-width: 330px) {
+  footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer .menu a {
   border: 2px solid black;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #181717;
+}
+@media (max-width: 330px) {
+  footer .menu a {
+    background-color: white;
+    color: black;
+    border-radius: 0;
+  }
 }
 .space {
   padding-bottom: 20px;

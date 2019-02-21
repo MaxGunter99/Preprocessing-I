@@ -66,18 +66,21 @@ html, body {
 body {
 	max-width: 1000px;
 	margin: 0 auto;
-	
+	background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/marble.jpg");
+	background-size: 100%;
 }
 
 .menu {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0 auto;
+	padding-top: 20px;
 
 	a {
+		background-color: rgb(0, 0, 0);
 		padding: 10px;
 		margin-left: 20px;
-		color: black;
+		color: rgb(255, 255, 255);
 		text-decoration: none;
 		font-size: 20px;
 		border-left: 2px solid black;
@@ -95,45 +98,76 @@ body {
 }
 
 .top-box{
+
 	border-radius: 10px 10px 0 0;
 	background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/low light.jpg");
 	background-attachment: fixed;
-	background-size: 150%;
-	height: auto;
+	background-position: 50% 75%;
+	background-repeat: no-repeat;
+	background-size: 200%;
+	border: 5px solid black;
+	height: 900px;
 	width: 100%;
 	padding: 30px;
-	box-shadow: 10px 10px 5px grey;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
 
 
 	.me {
+
+		background-image: -moz-linear-gradient(to right, #ffffff, #000000);
+		background-image: -webkit-linear-gradient(to right, #ffffff, #000000);
+		background-image: -ms-linear-gradient(to right, #ffffff, #000000);
+		background-image: linear-gradient(to right, #ffffff, #000000);
+
+		@media ( max-width: 330px ) {
+			padding: 0;
+		}
+
 		border-radius: 10px;
+		background-color:white;
 		padding: 20px;
-    	background-color: white;
 		border: 5px solid black;
-    	width: 40%;
+    	width: 30%;
     	height: auto;
     	display: flex;
 		margin-right: auto;
-		margin-bottom: 20px;	
+		margin-bottom: 20px;
 		
+		@media ( max-width: 715px ) {
+			margin: 0 auto;
+		}
 	}
 
 	.text-bit{
 
+		@media ( max-width: 330px ) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
 		h1 {
+			padding-top: 60px;
 			font-size: 3em;
-			color: white;
+			color: rgb(255, 255, 255);
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+			@media ( max-width: 330px ) {
+				font-size: 30px;
+			}
 		}
 
 		.quote{
+			font-size: 24px;
 			display: flex;
 			justify-content: center;
 			color: white;
-			border-bottom: 2px dotted white;
+			border-bottom: 2px dotted rgb(255, 255, 255);
+			background-color: rgb(0, 0, 0);
 		}
 
 		p {
-			color: white;
+			color: rgb(255, 255, 255);
 			.givemespace();
 		}
 
@@ -154,12 +188,13 @@ body {
 }
 
 .middle-content {
-	border: 3px solid black;
+	border: 5px solid black;
 	display: inline-flex;
 	max-width: 1000px;
-	background-color: rgb(75, 75, 75);
 	color: white;
-	box-shadow: 10px 10px 5px grey;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
+	background-color: rgb(68, 67, 67);
+	
 
 	@media (max-width: 1000px ) {
 		display: flex;
@@ -207,14 +242,14 @@ body {
 
 .work-history {
 	border-radius: 0 0 10px 10px;
-	border: 2px solid black;
+	border: 5px solid black;
 	background-image: url("/Users/voidchaser/Lambda/Preprocessing-I/img/bricks-brickwall-brickwork-1092364.jpg");
 	background-size: 1000px;;
 	background-position: center;
 	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 10px 10px 5px grey;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
 
 	h1 {
 		font-size: 2em;
@@ -250,10 +285,25 @@ body {
 	}
 }
 
+footer .menu {
+	@media ( max-width: 330px ) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 footer .menu a {
+
+	
 	border: 2px solid black;
-	border-radius: 0 0 10px 10px;
-	box-shadow: 10px 10px 5px grey;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px rgb(24, 23, 23);
+
+	@media ( max-width: 330px ) {
+		background-color: white;
+		color: black;
+		border-radius: 0;
+	}
 }
 
 .space {
